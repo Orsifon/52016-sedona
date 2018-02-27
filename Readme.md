@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Сергей Харлов](https://up.htmlacademy.ru/htmlcss/20/user/52016).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Уразаев]
+(https://htmlacademy.ru/profile/urazaev)
 
 ---
 
