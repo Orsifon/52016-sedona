@@ -2,117 +2,79 @@
 <html>
 
  <head>
-     <meta charset="utf-8">     
-     <link href="css/" rel="stylesheet">
+     <meta charset="utf-8">
+     <link href="css/style.css" rel="stylesheet">
      <title>HTML Academy: Седона</title>
-
-
-
-
 </head>
 
  <body>
 
      <header class="main_header">
-        <nav>
-            <img src="img/#" class="nav_logo" alt="Горы">
-            <!-- 
-             Картинка на горы в навигации.Как лучше использовать? 
-            -->
-            
+         <nav>
+           <img src="img/#" class="nav_logo" alt="Горы">
            <ul class="main_nav">
              <li><a href="#">Информация</a></li>
              <li><a href="#">Фото и видео</a></li>
              <li><a href="#">Карта штата</a></li>
-             <li><a href="#">Гостиницы</a></li>    
-         </ul>
-            
-            <img src="img/#" class="logo_background" alt="Лого сайта"> 
-            <!-- 
-          Фон с SEDONA,это как отдельный блок,или относится к навигации.
-          Картинка или фоновое изображение?Больше склоняюсь к отдельному блоку с фоновой картинкой
-                    -->
-     
-         </nav>         
+             <li><a href="hotels.html">Гостиницы</a></li>
+           </ul>
+         </nav>
          
+         <section class="background_logo">
+                <!-- Тут будет css фоновое изображение -->
+         </section>
+
      </header>
-     
-     
-     
+
      <main>
-         <section class="?">
+         <section class="Sedona_main">
              <h3>Седона-небольшой городок в аризоне,заслуживающий большего!</h3>
              <p>Рассмотрим 5 причин,по которым седона круче,чем гранд каньон!</p>
-             
-             <!--
-                Эта секция относится ближе к хедеру или как обычная секция?Поэтому не знаю какое название классу подобрать
-                          -->
-         
-         
          </section>
-         
+
          <section class="reason_1">
              <h4>Настоящий городок</h4>
              <span>-№1-</span>
-             <p>Седона-не аттракцион для туристов,там течёт своя жизнь</p>                                
+             <p>Седона-не аттракцион для туристов,там течёт своя жизнь</p>
          </section>
-         
+
          <section class="reason_1_picture">
-         
-         <img src="#" class="reason_pic" alt="Картинка 1 причины">
-         
+             <img src="#" class="reason_pic" alt="Картинка 1 причины">
          </section>
-         
+
          <section class="items">
              <ul class="">
                  <li class="sedona_plus">
                      <h3>Жилье</h3>
-                     <p>Рекомендуем пожить в настоящем мотеле,как все в кино!</p>                       
+                     <p>Рекомендуем пожить в настоящем мотеле,как все в кино!</p>
                  </li>
                  <li class="sedona_plus">
                      <h3>Еда</h3>
-                     <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>                   
+                     <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
                  </li>
                  <li class="sedona_plus">
                      <h3>Сувениры</h3>
-                     <p>Не только китайского,но и местного производства!</p>                      
-                 </li>                                               
+                     <p>Не только китайского,но и местного производства!</p>
+                 </li>
              </ul>
-         
-    <!--
-          Нужны ли перед h3 <span> для картинок с жильём,едой и сувенирами как на макете или это всё будет делаться по другому?Например заменять квадрат на картинку?У <li> можно как то менять квадрат на другие фигуры и вроде на картинки тоже можно.На счёт названия классов ul,li не представляю как правильно их тут назвать и к чему они относятся.
--->
-         
-         
-         
          </section>
-         
+
          <section class="reason_2">
              <h4>Там есть мост дьявола</h4>
              <span>-№2-</span>
              <p>Да,по нему можно пройти!Если конечно вы осмелитесь</p>
-         
-         
-         
-         
-         
-         
          </section>
-         
+
          <section class="reason_2_picture">
              <img src="#" class="reason_pic" alt="картинка 2 причины">
-         
-         
-         
-         
          </section>
-         
+
          <section class="other_reasons">
              <ul class="list_reasons">
                  <li class="reason_item">
                      <h4>Небольшая площадь</h4>
                      <span>-№3-</span>
-                     <p>Все достопримечательности находятся очень близко</p>        
+                     <p>Все достопримечательности находятся очень близко</p>
                  </li>
                  <li class="reason_item">
                      <h4>Красивая дорога</h4>
@@ -124,88 +86,46 @@
                      <span>-№5-</span>
                      <p>Большинство едет в гранд каньон и толпится там</p>
                  </li>
-             
-             
-             
-             
-             
-             
              </ul>
-         
-         
-         
-         
-         
-         
          </section>
-         
+
          <section class="form_date">
              <h3>Заинтересовались?</h3>
              <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
              <!-- Форма -->
-             
              <button>Поиск Гостиницы в седоне</button>
-             <!-- 
- Я так понял тут должен быть div или section,который указан ниже modal_search и будет появляться при нажатии кнопки.
--->
-         
-         
-         
-         
+             
+             <section class="modal_search">
+               <header class="modal_header">
+                 <h3>Поиск гостиницы в седоне</h3>
+                 <!-- Выпадающая форма -->
+                  <button>Найти</button>
+              </header>
+             </section>
+
          </section>
-         
+
          <section class="map">Тут будет карта седоны</section>
-     
-     
-     
-     
      </main>
-     
-     
+
      <footer class="footer_main">
          <span>#VISITSEDONA</span>
-         
+
          <div class="socials">
              <ul class="footer_socials">
                  <li class="social_link"><a href="#">Контакт</a></li>
                  <li class="social_link"><a href="#"> Facebook</a></li>
-                 <li class="social_link"><a href="#">Youtube</a></li>                  
+                 <li class="social_link"><a href="#">Youtube</a></li>
              </ul>
-         
-         
-         
          </div>
-         
-         <p>
-         Website by 
-             <img src="img/#" alt="Картинка htmlacademy">
-         
+
+         <p>Website by
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/#" alt="Картинка htmlacademy">
+            </a>
          </p>
          
-     <!--
-           Как правильно сделать правую часть футера с website by?Это span+img или как то по другому?
--->
-     
-     
      </footer>
      
-     
-     <section class="modal_search">
-         <header class="modal_header">
-             <h3>Поиск гостиницы в седоне</h3>
-             <!-- Форма -->
-             <button>Найти</button>
-         
-         </header>
-     
-     
-     
-     </section>
-     
-     
-     
-
 </body>
-    
-    
 </html>
