@@ -91,13 +91,30 @@
          <section class="form_date">
              <h3>Заинтересовались?</h3>
              <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-             <!-- Форма -->
-             <button>Поиск Гостиницы в седоне</button>
+             <button class="modal_button">Поиск Гостиницы в седоне</button>
              
              <section class="modal_search">
                <header class="modal_header">
                  <h3>Поиск гостиницы в седоне</h3>
-                 <!-- Выпадающая форма -->
+                 <form class="hotels_offers" action="https://echo.htmlacademy.ru" method="get">
+                     <p class="hotels_date_arrival">
+                        <label for="date_of_arrival">Дата заезда: </label>
+                        <input type="date" id="date_of_arrival">
+                     </p>
+                     
+                     <p class="hotels_date_depart">
+                        <label for="date_of_depart">Дата заезда: </label>
+                        <input type="date" id="date_of_depart">                  
+                     </p>
+                     
+                     <p class="people_summ">
+                         <label for="adult">Взрослые:</label>
+                         <input type="number" id="adult" min="1">
+                         <label for="children">Дети:</label>
+                         <input type="number" id="children" min="0">                
+                     </p>
+                     <a href="#" class="search_button">Найти</a>
+                 </form>
                   <button>Найти</button>
               </header>
              </section>
@@ -112,9 +129,9 @@
 
          <div class="socials">
              <ul class="footer_socials">
-                 <li class="social_link"><a href="#">Контакт</a></li>
-                 <li class="social_link"><a href="#"> Facebook</a></li>
-                 <li class="social_link"><a href="#">Youtube</a></li>
+                 <li class="social_link"><a href="#" aria-label="Контакт">VK</a></li>
+                 <li class="social_link"><a href="#" aria-label="Facebook">Facebook</a></li>
+                 <li class="social_link"><a href="#" aria-label="Youtube">Youtube</a></li>
              </ul>
          </div>
 
