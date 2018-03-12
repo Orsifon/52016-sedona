@@ -22,7 +22,42 @@
 
      <main class="hostel_main">
          <section class="form_options">
-         <!-- Форма -->
+         <form class="search_form" aria-label="Форма поиска" action="https://echo.htmlacademy.ru" method="get">
+             <div class="infrast">
+                <h4>Инфраструктура: </h4>
+                <input type="checkbox" class="search_infrast" name="waterpool" id="waterpool" checked>
+                <label for="waterpool">Бассейн</label>
+                <input type="checkbox" class="search_infrast" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+                <input type="checkbox" class="search_infrast" name="wifi" id="wifi">
+                <label for="wifi">WI-FI</label>
+             </div>
+             
+             <div class="house_type">
+             <h4>Тип жилья</h4>
+                <input type="checkbox" class="search_house" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+                <input type="checkbox" class="search_house" name="motel" id="motel">
+                <label for="motel">Мотель</label>
+                <input type="checkbox" class="search_house" name="apart" id="apart">
+                <label for="apart">Апартаменты</label>
+             </div>
+             
+             <div class="cost_perday">
+             <h4>Стоимость в сутки(Р): </h4>
+                 <p class="summ_cost">
+                   <label for="min_summ">От</label>
+                   <input type="number" id="min_summ" min="0" name="min_summ">
+                   <label for="max_summ">До</label>
+                   <input type="number" id="max_summ" min="0" name="max_summ">
+                </p>
+                <div class="search_slider">
+                    <span class="min_slider"></span>
+                    <span class="max_slider"></span>
+                </div>
+                <button class="btn_show_hotels" value="Показать">Показать</button>
+             </div>                 
+         </form>
          </section>
 
          <section class="hostel_found">
@@ -90,9 +125,9 @@
          <span>#VISITSEDONA</span>
          <div class="socials">
              <ul class="footer_socials">
-                 <li class="social_link"><a href="#">Контакт</a></li>
-                 <li class="social_link"><a href="#"> Facebook</a></li>
-                 <li class="social_link"><a href="#">Youtube</a></li>
+                 <li class="social_link"><a href="#" aria-label="Контакт">VK</a></li>
+                 <li class="social_link"><a href="#" aria-label="Facebook">Facebook</a></li>
+                 <li class="social_link"><a href="#" aria-label="Youtube">Youtube</a></li>
              </ul>
          </div>
 
