@@ -99,24 +99,24 @@
                  <form class="hotels_offers" action="https://echo.htmlacademy.ru" method="get">
                      <p class="hotels_date_arrival">
                         <label for="date_of_arrival">Дата заезда: </label>
-                        <input type="text" id="date_of_arrival" placeholder="24 апреля 2017">
+                        <input type="text" id="date_of_arrival" placeholder="24 апреля 2017" name="date_of_arrival">
                         <span class="icon_calendar"></span>
                      </p>
                      
                      <p class="hotels_date_depart">
                         <label for="date_of_depart">Дата выезда: </label>
-                        <input type="text" id="date_of_depart" placeholder="4 июля 2017">
+                        <input type="text" id="date_of_depart" placeholder="4 июля 2017" name="date_of_depart">
                          <span class="icon_calendar"></span>
                      </p>
                      
                      <p class="people_summ">
                          <label for="adult">Взрослые:</label>
                          <button class="adult_btn_down" value="btn_adult_down">-</button>
-                         <input type="number" id="adult" min="1">
+                         <input type="number" id="adult" min="1" name="count_adults">
                          <button class="adult_btn_up" value="btn_adult_up">+</button>          
                          <label for="children">Дети:</label>
                          <button class="children_btn_down" value="btn_children_down">-</button>
-                         <input type="number" id="children" min="0">
+                         <input type="number" id="children" min="0" name="count_children">
                          <button class="children_btn_up" value="btn_children_up">+</button>
                      </p>
                      <input type="submit" value="Показать">
