@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color:#ffffff;
+  color:black;
+}
+
+.nav_current_select {
+    color:#ada19a;
+}
+
+body li {
+    list-style: none;
+}
+
+.main_nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#000000;
+}
+
+.main_nav a:hover{
+    color:#81b3d2;
+}
+
+.main_nav a:active{
+    color:c1c1c1;
+}
+
+.sedona_plus h3,
+.reason_item h4,
+.modal_search h3,
+.footer_visit
+{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.sedona_plus p {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.reason_item {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.hotels_offers label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.footer_socials a {
+    text-decoration: none;
+}
+
+.reason_1 {
+    background-color:#81b3d2;
+}
+
+.reason_2{
+    background-color:#81b3d2;
+}
+
+.reason_item {
+    background-color:#eeeeee;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+button.modal_button {
+    background-color:#766357;
+    color:#ffffff;
+}
+
+button.modal_button:hover{
+    background-color:#604e43;
+}
+
+button.btn_show_offers {
+    background-color:#81b3d2;
+    color:#ffffff;
+}
+
+.hotels_offers input[type="text"]{
+    background-color:#f2f2f2; 
+}
+
+.hotels_offers input[type="text"]:hover{
+    background-color:#ebebeb;
+}
+
+.hotels_offers input[type="text"]:focus{
+    background-color:#ffffff;
+}
+
+.btn_show_offers:hover {
+    background-color:#669ec0;
+}
+
+.footer_socials li {
+    background-color:#81b3d2;
+}
+
+/* css для hotels.html --> */
+
+.form_options{
+    background-image:url(../img/hotel_search_form.jpg);
+    background-repeat: no-repeat;
+    color:#ffffff;
+}
+
+.btn_show_hotels {
+    background-color: inherit;
+    color: white;
+    font-size: 14px;
+}
+
+.btn_show_hotels:hover{
+    background-color: white;
+    color:#000000;
+}
+
+.btn_hotel_book {
+    background-color:#766357;
+    color:#ffffff;
+    font-size: 14px;
+}
+
+.btn_hotel_book:hover{
+    background-color:#604e43;
+}
+
+.btn_info {
+    text-decoration: none;
+    background-color:#81b3d2;
+    color:#ffffff;
+}
+
+.btn_info:hover {
+    background-color:#669ec0;
+}

@@ -3,6 +3,7 @@
 
  <head>
      <meta charset="utf-8">
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
      <link href="css/style.css" rel="stylesheet">
      <title>HTML Academy: Седона</title>
 </head>
@@ -13,7 +14,7 @@
          <nav>
            <a class="index_link"><img class="nav_logo" src="img/nav_logo.svg" alt="Логотип Седоны"></a>
            <ul class="main_nav">
-             <li><a href="#">Информация</a></li>
+             <li><a href="#" class="nav_current_select">Информация</a></li>
              <li><a href="#">Фото и видео</a></li>
              <li><a href="#">Карта штата</a></li>
              <li><a href="hotels.html">Гостиницы</a></li>
@@ -94,7 +95,6 @@
              <button class="modal_button">Поиск Гостиницы в седоне</button>
              
              <section class="modal_search">
-                 <h3>Поиск гостиницы в седоне</h3>
                  <form class="hotels_offers" action="https://echo.htmlacademy.ru" method="get">
                      <p class="hotels_date_arrival">
                         <label for="date_of_arrival">Дата заезда: </label>
@@ -111,14 +111,14 @@
                      <p class="people_summ">
                          <label for="adult">Взрослые:</label>
                          <button class="adult_btn_down" value="btn_adult_down">-</button>
-                         <input type="number" id="adult" min="1" name="count_adults">
+                         <input type="number" id="adult" min="1" name="count_adults" value="2">
                          <button class="adult_btn_up" value="btn_adult_up">+</button>          
                          <label for="children">Дети:</label>
                          <button class="children_btn_down" value="btn_children_down">-</button>
-                         <input type="number" id="children" min="0" name="count_children">
+                         <input type="number" id="children" min="0" name="count_children" value="0">
                          <button class="children_btn_up" value="btn_children_up">+</button>
                      </p>
-                     <button class="btn_show_offers" value="btn_show_offers">Показать</button>
+                     <button class="btn_show_offers" value="btn_show_offers">Найти</button>
                  </form>
              </section>
 
@@ -128,7 +128,7 @@
      </main>
 
      <footer class="footer_main">
-         <span>#VISITSEDONA</span>
+         <span class="footer_visit">#VISITSEDONA</span>
 
          <div class="socials">
              <ul class="footer_socials">
