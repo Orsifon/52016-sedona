@@ -4,6 +4,7 @@
  <head>
      <meta charset="utf-8">
      <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+     <link href="css/normalize.css" rel="stylesheet">
      <link href="css/style.css" rel="stylesheet">
      <title>HTML Academy: Седона</title>
   <base href="https://htmlacademy-htmlcss.github.io/52016-sedona/5/">
@@ -111,15 +112,15 @@
                      
                      <p class="people_summ">
                          <label for="adult">Взрослые:</label>
-                         <button class="adult_btn_down" value="btn_adult_down">-</button>
+                         <button type="button" class="btn_down" value="btn_adult_down">-</button>
                          <input type="number" id="adult" min="1" name="count_adults" value="2">
-                         <button class="adult_btn_up" value="btn_adult_up">+</button>          
+                         <button type="button" class="btn_up" value="btn_adult_up">+</button>          
                          <label for="children">Дети:</label>
-                         <button class="children_btn_down" value="btn_children_down">-</button>
+                         <button type="button" class="btn_down" value="btn_children_down">-</button>
                          <input type="number" id="children" min="0" name="count_children" value="0">
-                         <button class="children_btn_up" value="btn_children_up">+</button>
+                         <button type="button" class="btn_up" value="btn_children_up">+</button>
                      </p>
-                     <button class="btn_show_offers" value="btn_show_offers">Найти</button>
+                     <button type="submit" class="btn_show_offers" value="btn_show_offers">Найти</button>
                  </form>
              </section>
 
@@ -141,7 +142,7 @@
 
          <p>Website by
             <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/#" alt="Картинка htmlacademy">
+               <span>Тут будет картинка HTML Academy(декоративная)</span>
             </a>
          </p>
          

@@ -3,6 +3,7 @@
  <head>
 
      <meta charset="utf-8">
+     <link href="css/normalize.css" rel="stylesheet">
      <link href="css/style.css" rel="stylesheet">
      <title>HTML Academy: Седона</title>
   <base href="https://htmlacademy-htmlcss.github.io/52016-sedona/5/">
@@ -13,10 +14,10 @@
         <nav>
           <a href="index.html"><img class="nav_logo" src="img/nav_logo.svg" alt="Логотип Седоны"></a>
           <ul class="main_nav">
-             <li><a href="#">Информация</a></li>
+             <li><a href="index.html">Информация</a></li>
              <li><a href="#">Фото и видео</a></li>
              <li><a href="#">Карта штата</a></li>
-             <li><a  class="nav_current_select">Гостиницы</a></li>
+             <li><a href="#" class="nav_current_select">Гостиницы</a></li>
           </ul>
          </nav>
      </header>
@@ -67,15 +68,15 @@
                  <b>Сортировка:</b>
                   <ul class="sorting">
                       <li class="sort_item_current">По цене</li>
-                      <li class="sort_item">По типу</li>
-                      <li class="sort_item">По рейтингу</li>
+                      <li class="sort_item" href="#">По типу</li>
+                      <li class="sort_item" href="#">По рейтингу</li>
+                      <li class="sort_item" href="#">↑</li>
+                      <li class="sort_item" href="#">↓</li>
                   </ul>
-                 <button class="but_up">↑</button>
-                 <button class="but_down">↓</button>
              </div>
              <ul class="hostels_list">
                  <li class="hostel_item">
-                     <h4>Amara Resort & SPA</h4>
+                     <h3 class="hotel_name">Amara Resort & SPA</h3>
                      <img src="img/hoter_resort.jpg" alt="Гостиница">
                      <span>Гостиница</span>
                      <span>от 4000р.</span>
@@ -91,7 +92,7 @@
                  </li>
                  
                  <li class="hostel_item">
-                     <h4>VILLAS AT POCO DIABLO</h4>
+                     <h3 class="hotel_name">VILLAS AT POCO DIABLO</h3>
                      <img src="img/hotel_diablo.jpg" alt="Гостиница">
                      <span>Арартаменты</span>
                      <span>от 2000р.</span>
@@ -105,7 +106,7 @@
                  </li>
                  
                  <li class="hostel_item">
-                     <h4>Desert QUAIL INN</h4>
+                     <h3 class="hotel_name">Desert QUAIL INN</h3>
                      <img src="img/hoter_quail.jpg" alt="Гостиница">
                      <span>Мотель</span>
                      <span>от 3000р.</span>
@@ -134,7 +135,7 @@
 
          <p>Website by
              <a href="https://htmlacademy.ru/intensive/htmlcss" >
-                <img src="img/#" alt="Картинка htmlacademy">
+                <span>Тут будет картинка HTML Academy(декоративная)</span>
              </a>
          </p>
      </footer>
