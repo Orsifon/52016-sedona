@@ -47,6 +47,7 @@ li a.nav_current_select {
     font-weight: normal;
 }
 
+.sedona_main h3,
 .sedona_plus h3,
 .reason_item h4,
 .modal_search h3,
@@ -83,10 +84,20 @@ li a.nav_current_select {
 
 .reason_1 {
     background-color:#81b3d2;
+    color:#ffffff;
+}
+
+.reason_1 {
+    font-size: 16px;
 }
 
 .reason_2{
     background-color:#81b3d2;
+    color:#ffffff;
+}
+
+.reason_2 h4{
+    font-size: 16px;
 }
 
 .reason_item {
@@ -188,6 +199,7 @@ button.btn_show_offers {
     color:#81b3d2;
 }
 
+.sort_item:hover,
 .sort_item:hover{
     color:#81b3d2;
 }
