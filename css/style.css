@@ -4,23 +4,31 @@ body {
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  text-transform: uppercase;
   background-color:#ffffff;
   color:black;
 }
 
-.nav_current_select {
+.main_nav li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+li a.nav_current_select {
     color:#ada19a;
 }
-
-body li {
-    list-style: none;
-}
-
 .main_nav a{
     text-decoration: none;
     font-weight: bold;
     color:#000000;
+    font-size: 14px;
+}
+
+.sedona_main,
+.reason_1,
+.sedona_plus,
+.reason_2,
+.other_reasons {
+    text-transform: uppercase;
 }
 
 .main_nav a:hover{
@@ -28,7 +36,15 @@ body li {
 }
 
 .main_nav a:active{
-    color:c1c1c1;
+    color:#c1c1c1;
+}
+
+.modal_button,
+.btn_show_offers {
+    text-transform: uppercase;
+    color:#ffffff;
+    font-size: 21px;
+    font-weight: normal;
 }
 
 .sedona_plus h3,
@@ -43,6 +59,11 @@ body li {
 .sedona_plus p {
     font-size: 14px;
     font-weight: normal;
+}
+
+.sedona_plus,
+.reason_item {
+    list-style: none;
 }
 
 .reason_item {
@@ -108,16 +129,87 @@ button.btn_show_offers {
     background-color:#669ec0;
 }
 
+.btn_up:hover,
+.btn_down:hover {
+    color:#000000;    
+}
+
+.btn_up:active,
+.btn_down:active {
+    color:#81b3d2;
+}
+
+.people_summ {
+    text-transform: uppercase;
+    font-size: 14px;
+    color:#000000;
+}
+
+.form_date p {
+    text-transform: uppercase;
+    font-size: 14px
+}
+
+.form_date h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
 .footer_socials li {
     background-color:#81b3d2;
+    list-style: none;
+}
+
+.footer_logo {
+    background-image: url(../img/logo_academy.png);
+    background-size: auto;
+    width:100px;
+    height:100px;
+}
+
+.footer_visit {
+    text-transform: uppercase;
+    color:#000000;
+    font-size: 21px;
 }
 
 /* css для hotels.html --> */
+
+.sorting li {
+    list-style: none;
+}
+
+.sort_item {
+    color:#;
+}
+
+.sort_item_current {
+    color:#81b3d2;
+}
+
+.sort_item:hover{
+    color:#81b3d2;
+}
+
+.sort_item:active{
+    color:#000000;
+}
+
 
 .form_options{
     background-image:url(../img/hotel_search_form.jpg);
     background-repeat: no-repeat;
     color:#ffffff;
+    text-transform: uppercase;
+}
+
+.hostels_list {
+    list-style: none;
+}
+
+.hostel_found {
+    text-transform: uppercase;
 }
 
 .btn_show_hotels {
@@ -149,4 +241,26 @@ button.btn_show_offers {
 
 .btn_info:hover {
     background-color:#669ec0;
+}
+
+.search_form h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.search_form label {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+li.sort_item {
+    font-size: 14px;
+}
+
+.btn_info,
+.btn_hotel_book{
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
 }
