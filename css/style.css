@@ -31,6 +31,11 @@ li a.nav_current_select {
     text-transform: uppercase;
 }
 
+.sedona_main p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .main_nav a:hover{
     color:#81b3d2;
 }
@@ -51,10 +56,11 @@ li a.nav_current_select {
 .sedona_plus h3,
 .reason_item h4,
 .modal_search h3,
+.conteiner h3,
 .footer_visit
 {
     font-size: 21px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .sedona_plus p {
@@ -82,22 +88,24 @@ li a.nav_current_select {
     text-decoration: none;
 }
 
-.reason_1 {
-    background-color:#81b3d2;
-    color:#ffffff;
-}
-
-.reason_1 {
-    font-size: 16px;
-}
-
+.reason_1,
 .reason_2{
     background-color:#81b3d2;
     color:#ffffff;
 }
 
-.reason_2 h4{
-    font-size: 16px;
+.reason_1 h4,
+.reason_2 h4 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.reason_1 span,
+.reason_1 p,
+.reason_2 span,
+.reason_2 p {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .reason_item {
@@ -138,21 +146,26 @@ button.btn_show_offers {
 
 ::-webkit-input-placeholder {
     background-color:#ebebeb;
+    font-size: 14px;
     color:#000000;
     font-weight: 700;
 }
 ::-moz-placeholder          {
     background-color:#ebebeb;
+    font-size: 14px;
     color:#000000;
     font-weight: 700;
 }
 :-moz-placeholder           {
     background-color:#ebebeb;
+    font-size: 14px;
     color:#000000;
+    font-size: 14px;
     font-weight: 700;
 }
 :-ms-input-placeholder{
     background-color:#ebebeb;
+    font-size: 14px;
     color:#000000;
     font-weight: 700;
 }
@@ -227,7 +240,7 @@ button.btn_show_offers {
 
 .form_date p {
     text-transform: uppercase;
-    font-size: 14px
+    font-size: 14px;
 }
 
 .form_date h3 {
@@ -297,6 +310,17 @@ button.btn_show_offers {
     background-color: inherit;
     color: white;
     font-size: 14px;
+    font-weight: 400;
+}
+
+ul.sorting li {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.hotel_name {
+    font-size: 21px;
+    font-weight: 700;
 }
 
 .btn_show_hotels:hover{
@@ -307,7 +331,6 @@ button.btn_show_offers {
 .btn_hotel_book {
     background-color:#766357;
     color:#ffffff;
-    font-size: 14px;
 }
 
 .btn_hotel_book:hover{
@@ -319,6 +342,7 @@ button.btn_show_offers {
     background-color:#81b3d2;
     color:#ffffff;
 }
+
 
 .btn_info:hover {
     background-color:#669ec0;
@@ -342,6 +366,6 @@ li.sort_item {
 .btn_info,
 .btn_hotel_book{
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 700;
     text-transform: uppercase;
 }
