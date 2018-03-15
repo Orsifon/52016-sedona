@@ -136,6 +136,75 @@ button.btn_show_offers {
     background-color:#ffffff;
 }
 
+::-webkit-input-placeholder {
+    background-color:#ebebeb;
+    color:#000000;
+    font-weight: 700;
+}
+::-moz-placeholder          {
+    background-color:#ebebeb;
+    color:#000000;
+    font-weight: 700;
+}
+:-moz-placeholder           {
+    background-color:#ebebeb;
+    color:#000000;
+    font-weight: 700;
+}
+:-ms-input-placeholder{
+    background-color:#ebebeb;
+    color:#000000;
+    font-weight: 700;
+}
+
+:focus::-webkit-input-placeholder {
+    background-color:#ffffff;
+    color:#000000;
+    font-weight: 700;
+}
+:focus::-moz-placeholder          {
+    background-color:#ebebeb;
+    color:#000000;
+    font-weight: 700;
+}
+:focus:-moz-placeholder           {
+    background-color:#ebebeb;
+    color:#000000;
+    font-weight: 700;
+}
+:focus:-ms-input-placeholder{
+    background-color:#ebebeb;
+    color:#000000;
+    font-weight: 700;
+}
+
+:hover::-webkit-input-placeholder {
+    background-color:#c1c1c1;
+    color:#000000;
+    font-weight: 700;
+}
+:hover::-moz-placeholder          {
+    background-color:#c1c1c1;
+    color:#000000;
+    font-weight: 700;
+}
+:hover:-moz-placeholder           {
+    background-color:#c1c1c1;
+    color:#000000;
+    font-weight: 700;
+}
+:hover:-ms-input-placeholder{
+    background-color:#c1c1c1;
+    color:#000000;
+    font-weight: 700;
+}
+
+.people_summ input[type="number"] {
+    background-color:#ebebeb;
+    color:#000000;
+    font-weight: 700;  
+}
+
 .btn_show_offers:hover {
     background-color:#669ec0;
 }
