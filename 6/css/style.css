@@ -10,12 +10,14 @@ body {
 
 .main_container {
     width: 1200px;
-    display: flex;
+    display:block;
+    margin:0 auto;
     justify-content: center;
     align-content: space-between;
     align-items: center;
     flex-direction: column;
 }
+
 
 .hidden {
 display: none;
@@ -27,16 +29,16 @@ display: none;
     clear: both;
     
 }
-
-.top_nav{
+.main_header {
     height: 56px;
-    width: 768px;
     outline: 1px solid #0002F5;
-    display: flex;
-    
 }
-.main_nav {
 
+
+.main_nav {
+    display: flex;
+    justify-content:space-around;
+    padding: 0px;
 }
 
 .main_nav li {
@@ -87,10 +89,10 @@ li a.nav_current_select {
 }
 
 .background_logo {
-    width: 768px;
     height: 512px;
     background-color:#81b3d2;
     outline: 1px solid #0002F5;
+    background-image: url(../img/background_photo.png);
 }
 .modal_button,
 .btn_show_offers {
@@ -148,34 +150,30 @@ li a.nav_current_select {
 }
 
 .reason_1_block {
-    width: 768px;
     outline: 1px solid #0002F5;
     display: flex;
+    height: 256px;
 }
 .reason_1 {
-    width:256px;
     height: 256px;
 }
 
 .reason_1_picture img {
-    width:512px;
     height: 256px;
 }
 
 .reason_2_block {
-    width: 768px;
     outline: 1px solid #0002F5;
     display: flex;
     flex-direction:row-reverse;
+    height: 256px;
 }
 
 .reason_2 {
-    width:256px;
     height: 256px;
 }
 
 .reason_2_picture img {
-    width:512px;
     height: 256px;
 }
 
@@ -196,13 +194,11 @@ li a.nav_current_select {
 .items {
     height: 330px;
     outline: 1px solid #0002F5;
-    width: 768px;
     margin-top:0px;
 }
 
 .other_reasons {
     background-color:#eeeeee;
-    width: 768px;
     height: 256px;
     outline: 1px solid #0002F5;
 }
@@ -216,7 +212,6 @@ li a.nav_current_select {
 }
 
 .reason_item {
-    width: 256px;
 }
 
 
@@ -229,6 +224,8 @@ button {
 button.modal_button {
     background-color:#766357;
     color:#ffffff;
+    width: 568px;
+    height: 86px;
 }
 
 button.modal_button:hover{
@@ -347,9 +344,11 @@ button.btn_show_offers {
 }
 
 .form_date {
-    width: 768px;
     height: 292px;
     outline: 1px solid #0002F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form_date p {
@@ -363,28 +362,28 @@ button.btn_show_offers {
 }
 
 .map {
-    width: 768px;
     height: 474px;
     background-image: url(../img/map.jpg);
     outline: 1px solid #0002F5;
 }
 
 .footer_main {
-    width: 768px;
     height:120px;
     outline: 1px solid #0002F5;
+    display: flex;
+    justify-content: space-around;
 }
 
 
 .footer_socials li {
     background-color:#81b3d2;
+    display: inline;
     list-style: none;
 }
 
 .footer_logo {
     background-image: url(../img/logo_academy.png);
     background-size: auto;
-    width:100px;
     height:100px;
 }
 
@@ -424,7 +423,6 @@ button.btn_show_offers {
     color:#ffffff;
     text-transform: uppercase;
     outline: 1px solid #0002F5;
-    width: 768px;
     height: 217px;
 }
 
@@ -447,10 +445,15 @@ button.btn_show_offers {
 }
 
 .conteiner {
-    width: 768px;
     height: 86px;
     outline: 1px solid #0002F5;
     display: flex;
+}
+
+.conteiner ul,
+.conteiner h3 {
+    margin: 0px;
+    padding:0px;
 }
 
 .hostels_list {
@@ -539,7 +542,20 @@ li.sort_item {
     text-transform: uppercase;
 }
 
-
-.hostel_item_test {
+.hostels_list {
     display: flex;
+    justify-content: space-around;
+    outline: 1px solid #0002F5;
+    
 }
+
+.hostel_item {
+    display: flex;
+    height: 151px;
+}
+
+.hostel_found ul {
+    margin: 0px;
+    padding: 0px;
+}
+
