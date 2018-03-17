@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+     <meta charset="utf-8">
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+     <link href="css/normalize.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+     <title>HTML Academy: Седона</title>
+  <base href="https://htmlacademy-htmlcss.github.io/52016-sedona/6/">
+</head>
+
+ <body>
+
+     <header class="main_header">
+         <nav class="top_nav">
+           <a class="index_link"><img class="nav_logo" src="img/nav_logo.png" alt="Логотип Седоны"></a>
+           <ul class="main_nav">
+             <li><a href="#">Информация</a></li>
+             <li><a href="#">Фото и видео</a></li>
+             <li><a href="#">Карта штата</a></li>
+             <li><a href="hotels.html">Гостиницы</a></li>
+           </ul>
+         </nav>
+         
+         <section class="background_logo">
+                <!-- Тут будет css фоновое изображение -->
+         </section>
+     </header>
+
+     <main>
+         <section class="sedona_main">
+             <h3>Седона-небольшой городок в аризоне,заслуживающий большего!</h3>
+             <p>Рассмотрим 5 причин,по которым седона круче,чем гранд каньон!</p>
+         </section>
+         
+         <div class="reason_1_block clearfix">
+            <section class="reason_1">
+               <h4>Настоящий городок</h4>
+               <span>-№1-</span>
+               <p>Седона-не аттракцион для туристов,там течёт своя жизнь</p>
+            </section> 
+            <section class="reason_1_picture">
+               <img class="reason_pic" src="img/reason1_pic.png" alt="Картинка 1 причины">
+            </section>
+         </div>
+
+         <section class="items">
+             <ul class="">
+                 <li class="sedona_plus">
+                     <h3>Жилье</h3>
+                     <p>Рекомендуем пожить в настоящем мотеле,как все в кино!</p>
+                 </li>
+                 <li class="sedona_plus">
+                     <h3>Еда</h3>
+                     <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
+                 </li>
+                 <li class="sedona_plus">
+                     <h3>Сувениры</h3>
+                     <p>Не только китайского,но и местного производства!</p>
+                 </li>
+             </ul> 
+         </section>
+         
+         <div class="reason_2_block clearfix">
+            <section class="reason_2">
+                <h4>Там есть мост дьявола</h4>
+                <span>-№2-</span>
+                <p>Да,по нему можно пройти!Если конечно вы осмелитесь</p>
+            </section>
+            <section class="reason_2_picture">
+                <img class="reason_pic" src="img/reason2_pic.png" alt="картинка 2 причины">
+            </section>
+         </div>
+
+         <section class="other_reasons">
+             <ul class="list_reasons">
+                 <li class="reason_item">
+                     <h4>Небольшая площадь</h4>
+                     <span>-№3-</span>
+                     <p>Все достопримечательности находятся очень близко</p>
+                 </li>
+                 <li class="reason_item">
+                     <h4>Красивая дорога</h4>
+                     <span>-№4-</span>
+                     <p>Ехать в седоне из Лас-Вегаса совсем не скучно!</p>
+                 </li>
+                 <li class="reason_item">
+                     <h4>Мало туристов</h4>
+                     <span>-№5-</span>
+                     <p>Большинство едет в гранд каньон и толпится там</p>
+                 </li>
+             </ul>
+         </section>
+
+         <section class="form_date">
+             <h3>Заинтересовались?</h3>
+             <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+             <button class="modal_button">Поиск Гостиницы в седоне
+             </button>
+          </section>   
+             <section class="modal_search hidden">
+                 <form class="hotels_offers" action="https://echo.htmlacademy.ru" method="get">
+                     <p class="hotels_date_arrival">
+                        <label for="date_of_arrival">Дата заезда: </label>
+                        <input type="text" id="date_of_arrival" placeholder="24 апреля 2017" name="date_of_arrival">
+                        <span class="icon_calendar"></span>
+                     </p>
+                     
+                     <p class="hotels_date_depart">
+                        <label for="date_of_depart">Дата выезда: </label>
+                        <input type="text" id="date_of_depart" placeholder="4 июля 2017" name="date_of_depart">
+                         <span class="icon_calendar"></span>
+                     </p>
+                     
+                     <p class="people_summ">
+                         <label for="adult">Взрослые:</label>
+                         <button type="button" class="btn_down" value="btn_adult_down">-</button>
+                         <input type="number" id="adult" min="1" name="count_adults" value="2">
+                         <button type="button" class="btn_up" value="btn_adult_up">+</button>          
+                         <label for="children">Дети:</label>
+                         <button type="button" class="btn_down" value="btn_children_down">-</button>
+                         <input type="number" id="children" min="0" name="count_children" value="0">
+                         <button type="button" class="btn_up" value="btn_children_up">+</button>
+                     </p>
+                     <button type="submit" class="btn_show_offers" value="btn_show_offers">Найти</button>
+                 </form>
+             </section>
+
+         <section class="map"></section>
+     </main>
+
+     <footer class="footer_main">
+         <span class="footer_visit">#VISITSEDONA</span>
+
+         <div class="socials">
+             <ul class="footer_socials">
+                 <li class="social_link"><a href="#" aria-label="Контакт">VK</a></li>
+                 <li class="social_link"><a href="#" aria-label="Facebook">Facebook</a></li>
+                 <li class="social_link"><a href="#" aria-label="Youtube">Youtube</a></li>
+             </ul>
+         </div>
+
+         <p>Website by
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+               Тут будет картинка HTML Academy(декоративная)
+            </a>
+         </p>
+         
+     </footer>
+     
+</body>
+</html>
