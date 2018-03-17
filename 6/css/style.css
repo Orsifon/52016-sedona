@@ -8,6 +8,15 @@ body {
   color:black;
 }
 
+.main_container {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
 .hidden {
 display: none;
 }
@@ -23,9 +32,11 @@ display: none;
     height: 56px;
     width: 768px;
     outline: 1px solid #0002F5;
+    display: flex;
+    
 }
 .main_nav {
-    float: left;
+
 }
 
 .main_nav li {
@@ -54,6 +65,12 @@ li a.nav_current_select {
 
 .sedona_main {
     height: 200px;
+    outline: 1px solid #0002F5;
+}
+
+.sedona_main h3,
+.form_date h3 {
+    margin: 0px;
 }
 
 .sedona_main p {
@@ -73,6 +90,7 @@ li a.nav_current_select {
     width: 768px;
     height: 512px;
     background-color:#81b3d2;
+    outline: 1px solid #0002F5;
 }
 .modal_button,
 .btn_show_offers {
@@ -93,8 +111,9 @@ li a.nav_current_select {
     font-weight: 700;
 }
 
-.sedona_plus{
-    float:left;
+.items ul {
+    margin:0px;
+    display: flex;
 }
 
 .sedona_plus p {
@@ -131,33 +150,32 @@ li a.nav_current_select {
 .reason_1_block {
     width: 768px;
     outline: 1px solid #0002F5;
+    display: flex;
 }
 .reason_1 {
     width:256px;
     height: 256px;
-    float:left;
 }
 
 .reason_1_picture img {
     width:512px;
-    float:right;
     height: 256px;
 }
 
 .reason_2_block {
     width: 768px;
     outline: 1px solid #0002F5;
+    display: flex;
+    flex-direction:row-reverse;
 }
 
 .reason_2 {
     width:256px;
     height: 256px;
-    float:right;
 }
 
 .reason_2_picture img {
     width:512px;
-    float:left;
     height: 256px;
 }
 
@@ -189,14 +207,18 @@ li a.nav_current_select {
     outline: 1px solid #0002F5;
 }
 
+.list_reasons {
+    display: flex;
+}
+
+.other_reasons ul {
+    margin: 0px;
+}
+
 .reason_item {
-    float:left;
     width: 256px;
 }
 
-.reason_item:last-child{
-    float:right;
-}
 
 button {
     text-transform: uppercase;
@@ -344,6 +366,7 @@ button.btn_show_offers {
     width: 768px;
     height: 474px;
     background-image: url(../img/map.jpg);
+    outline: 1px solid #0002F5;
 }
 
 .footer_main {
@@ -405,15 +428,22 @@ button.btn_show_offers {
     height: 217px;
 }
 
+.search_form {
+    display: flex;
+}
+
 .infrast {
-    float:left;
+    display: flex;
+    flex-direction: column;
 }
 
 .house_type{
-    float:left;
+    display: flex;
+    flex-direction: column;
 }
 .cost_perday{
-    float:right;
+    display: flex;
+    flex-direction: column;
 }
 
 .conteiner {
@@ -429,6 +459,11 @@ button.btn_show_offers {
 
 .hostel_found {
     text-transform: uppercase;
+}
+
+.hostels_list {
+    display: flex;
+    flex-direction:column;
 }
 
 .btn_show_hotels {
@@ -502,4 +537,9 @@ li.sort_item {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+
+.hostel_item_test {
+    display: flex;
 }
